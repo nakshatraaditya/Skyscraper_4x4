@@ -2,12 +2,28 @@
 
 **Task : 4x4 Grid Puzzle Solver**
 
-This project implements a Python solution for the task. It involves solving a 4x4 skyscraper puzzle, where each cell in the grid represents a tower with a height from 1 to 4. The objective is to fill the grid such that each row and column contains each number exactly once, while satisfying visibility clues provided for the top, bottom, left, and right of the grid. These clues indicate how many towers are visible from each direction, with taller towers blocking shorter ones.
 
-The implementation uses a constraint propagation approach, representing each cell as a set of possible values and iteratively applying rules to reduce possibilities until the grid is solved. The code includes functions to:
-- Initialize the grid and clues.
-- Apply logical constraints based on uniqueness, clue values, pairs, and item existence.
-- Solve four specific puzzle configurations provided in the task.
+This repository contains the Python implementation for the task. It involves solving a 4x4 grid puzzle (a skyscraper puzzle variant) where each cell represents a tower height (1 to 4), and clues indicate the number of visible towers from each direction. The solver uses a constraint propagation approach to deduce the grid configuration.
 
-The solver is built using Python 3 and NumPy. It outputs the solving process and the final grid configuration if a solution is found.
+## Task Description
 
+The goal is to fill a 4x4 grid such that:
+- Each row and column contains the numbers 1 to 4 exactly once.
+- Numbers represent tower heights.
+- Clues outside the grid (top, bottom, left, right) indicate how many towers are visible from that direction, with higher towers blocking lower ones.
+- The solution iteratively applies rules to narrow down possible values for each cell.
+
+The task requires implementing functions (A to L) to initialize the grid, apply constraints, and solve four specific puzzle configurations.
+
+## Prerequisites
+
+- Python 3.x
+- NumPy library (`pip install numpy`)
+
+The code uses only the allowed Python commands and NumPy functions specified (`numpy.zeros`, `numpy.empty`).
+
+## Usage
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/nakshatraaditya/Skyscraper_4x4
